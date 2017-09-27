@@ -1,0 +1,21 @@
+language: java
+jdk:
+- oraclejdk8
+branches:
+  only:
+  - master
+  - develop
+notifications:
+  email:
+    recipients:
+    - jchantej@gmail.com
+script:
+#Test unitario y de integracion en develop
+- mvn verify --settings settings.xml
+# ============ mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify --settings settings.xml ... ==================
+# Se prepara cobertura
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify --settings settings.xml
+
+# ============ mvn sonar:sonar ... =======================================================
+#  Se analiza y sube a sonar cloud
+- mvn sonar:sonar -Dsonar.organization=jchantej-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=1c003e675d1fcb22c590389e93d1a6b639c46e62 --settings settings.xml
