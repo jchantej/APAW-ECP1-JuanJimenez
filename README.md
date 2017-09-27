@@ -9,11 +9,11 @@
 * GitHub
 
 ### Descripción
-Este proyecto se  implementan algunos patrones de diseño, entre ellos
-1.- Factoria y Singleton
-2.- Builder
-3.- Composide
-4.- Strategy
+Este proyecto se  implementan algunos patrones de diseño, entre ellos  
+1.- Factoria y Singleton  
+2.- Builder  
+3.- Composide  
+4.- Strategy  
 
 
 ### Elaborado Por: Juan Pablo Jiménez Ramos
