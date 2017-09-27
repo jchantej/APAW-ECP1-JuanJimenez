@@ -9,7 +9,7 @@
 * GitHub
 
 ### Descripción
-Este proyecto se  implementan algunos patrones de diseño, entre ellos  
+En proyecto se  implementan algunos patrones de diseño, entre ellos:    
 1.- Factoria y Singleton  
 2.- Builder  
 3.- Composide  
