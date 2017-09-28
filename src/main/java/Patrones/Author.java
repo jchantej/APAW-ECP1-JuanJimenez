@@ -8,25 +8,24 @@ public class Author {
 
     private String language;
 
-    public Author(Long id, String name, String language) {
+    public Author(long id, String name, String language) {
         super();
         this.id = id;
         this.name = name;
         this.language = language;
     }
     
-    public Author(Long id, String name) {
+    public Author(long id, String name) {
         super();
         this.id = id;
         this.name = name;
     }
     
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
