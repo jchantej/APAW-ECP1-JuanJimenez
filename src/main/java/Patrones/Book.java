@@ -14,27 +14,10 @@ public class Book {
 
     private Author autor;
 
-    public Book(long id, long isbn, String title, Calendar date, Author autor) {
+    public Book(long id, Author autor) {
+        assert autor != null; 
         this.id = id;
-        this.isbn = isbn;
-        this.title = title;
-        this.date = date;
         this.autor = autor;
-    }
-
-    public Book(long id, long isbn, String title, Calendar date) {
-        super();
-        this.id = id;
-        this.isbn = isbn;
-        this.title = title;
-        this.date = date;
-    }
-
-    public Book(long id, long isbn, String title) {
-        super();
-        this.id = id;
-        this.isbn = isbn;
-        this.title = title;
     }
 
     public long getId() {
@@ -63,7 +46,7 @@ public class Book {
 
     public Calendar getDate() {
         return date;
-    }
+    } 
 
     public void setDate(Calendar date) {
         this.date = date;
