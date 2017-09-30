@@ -9,14 +9,16 @@ public class BookBuilder {
 
     private Book book;
 
-    public BookBuilder() {
-        book = new Book(0, 0, "");
+    
+    public BookBuilder(long id,  Author autor) {
+        this.book = new Book(id,  autor);
     }
     
-    public BookBuilder(long id, long isbn, String title, Calendar date, Author autor) {
+    public BookBuilder() {
+        this (0, new Author(0, ""));
+     }
 
-        this.book = new Book(id, isbn, title, date, autor);
-    }
+
 
     public BookBuilder id(long id) {
 
