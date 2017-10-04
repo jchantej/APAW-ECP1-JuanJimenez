@@ -22,7 +22,7 @@ public class BookTest {
 
     @Test
     public void testBookLongStringCalendarAuthor() {
-        Author author = new Author(32, "Juan P", "Español");
+        Author author = new AuthorBuilder().id(32).name("Juan Jimenez").language("Español").build();
         Calendar fechaActual = GregorianCalendar.getInstance();
         Book book = new BookBuilder().id(1).isbn(12).title("Programacion").date(fechaActual).author(author).build();
 
@@ -33,7 +33,7 @@ public class BookTest {
                 + String.valueOf(book.getDate().get(Calendar.MONTH) + 1) + "/" + String.valueOf(book.getDate().get(Calendar.YEAR));
         assertEquals(fechaTestFormat, formatoFecha);
         assertEquals(32, book.getAutor().getId());
-        assertEquals("Juan P", book.getAutor().getName());
+        assertEquals("Juan Jimenez", book.getAutor().getName());
         assertEquals("Español", book.getAutor().getLanguage());
 
     }

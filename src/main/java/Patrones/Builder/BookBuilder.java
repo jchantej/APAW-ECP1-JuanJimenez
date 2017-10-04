@@ -9,7 +9,6 @@ public class BookBuilder {
 
     private Book book;
 
-    
     public BookBuilder(long id,  Author autor) {
         this.book = new Book(id,  autor);
     }
@@ -19,11 +18,10 @@ public class BookBuilder {
      }
 
 
-
     public BookBuilder id(long id) {
 
         this.book.setId(id);
-        return this; // Preguntar por que this
+        return this; 
     }
 
     public BookBuilder isbn(long isbn) {
@@ -49,6 +47,7 @@ public class BookBuilder {
         this.book.setAutor(author);
         return this;
     }
+    
 
     public Book build() {
         return this.book;

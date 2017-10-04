@@ -7,7 +7,11 @@ public class Author {
     private String name;
 
     private String language;
+    
+    public Author() {
 
+    }
+    
     public Author(long id, String name, String language) {
         super();
         this.id = id;
