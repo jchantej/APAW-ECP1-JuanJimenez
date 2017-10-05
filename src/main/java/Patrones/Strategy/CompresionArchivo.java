@@ -6,7 +6,7 @@ public  abstract class  CompresionArchivo  {
 
     public CompresionArchivo(String nombreArchivo) {
         super();
-        this.nombreArchivo = nombreArchivo;
+       this.nombreArchivo = nombreArchivo;
     }
 
     public String getNombreArchivo() {
