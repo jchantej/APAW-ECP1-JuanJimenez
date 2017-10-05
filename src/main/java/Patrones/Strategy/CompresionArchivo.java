@@ -17,7 +17,6 @@ public  abstract class  CompresionArchivo  {
         this.nombreArchivo = nombreArchivo;
     }
 
-   // @Override
     public abstract String comprimirArchivo();
 
     
