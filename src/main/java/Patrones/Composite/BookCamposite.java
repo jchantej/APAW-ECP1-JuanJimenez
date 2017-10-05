@@ -18,17 +18,11 @@ public class BookCamposite extends BookComponent{
 
     @Override
     public void add(BookComponent bookComponent) {
-       // assert bookComponent != null;
+        assert bookComponent != null;
         bookComponents.add(bookComponent);
         
     }
 
-    @Override
-    public void remove(BookComponent bookComponent) {
-      //  assert bookComponent != null;
-        bookComponents.remove(bookComponent);      
-    }
-    
     @Override
     public String view() {
         return this.toString();

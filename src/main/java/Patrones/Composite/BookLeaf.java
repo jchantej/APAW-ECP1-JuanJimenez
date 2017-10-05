@@ -21,16 +21,10 @@ public class BookLeaf extends BookComponent
 
     @Override
     public void add(BookComponent bookComponent) {
-        // not soported because is  leaf
+        throw new UnsupportedOperationException("Operación no soportada");
         
     }
 
-    @Override
-    public void remove(BookComponent bookComponent) {
-        // not soported because is  leaf
-        
-    }
-    
     @Override
     public String toString () {
         

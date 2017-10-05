@@ -61,6 +61,12 @@ public class BookCompositeTest {
         assertEquals("PROGRAMACION", this.estante.view());
         assertEquals("BASE DE DATOS", this.sub1.view());
     }
+    
+    @Test
+    public void testAddLeaf() {
+        exception.expect(UnsupportedOperationException.class);
+        this.leaf.add(new BookLeaf(bookC));
+    }
 
 
 }
