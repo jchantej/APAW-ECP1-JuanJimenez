@@ -4,32 +4,16 @@ public class Archivo {
 
     private CompresionArchivo compresionArchivo;
 
-    private String tipoArchivo;
-    private String nombreArchivo;
-
-    public Archivo(String tipoArchivo, String nombreArchivo) {
+    public Archivo(CompresionArchivo compresionArchivo) {
         super();
-        this.tipoArchivo = tipoArchivo;
-        this.nombreArchivo = nombreArchivo;
+        this.compresionArchivo = compresionArchivo;
     }
 
-    public void comprimirArchivo() {
-
-        switch (this.tipoArchivo) {
-        case "VIDEO":
-            compresionArchivo = new CompresionVideo(nombreArchivo);
-            break;
-        case "AUDIO":
-            compresionArchivo = new CompresionAudio(nombreArchivo);
-            break;
-        default:
-            compresionArchivo = new CompresionNoSoportada(nombreArchivo);
-        }
-    }
-
-    public String mostrarCompresion() {
+    public String comprimirArchivo() {
+        
         return compresionArchivo.comprimirArchivo();
-
+  
     }
+
 
 }
