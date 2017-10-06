@@ -13,11 +13,6 @@ public  abstract class  CompresionArchivo  {
         return nombreArchivo;
     }
 
-    public void setNombreArchivo(String nombreArchivo) {
-        this.nombreArchivo = nombreArchivo;
-    }
-
     public abstract String comprimirArchivo();
-
-    
+  
 }

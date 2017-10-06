@@ -9,15 +9,11 @@ public class Archivo {
         this.compresionArchivo = compresionArchivo;
     }
 
-    public void comprimirArchivo() {
+    public String comprimirArchivo() {
         
-        compresionArchivo.comprimirArchivo();
+        return compresionArchivo.comprimirArchivo();
   
     }
 
-    public String mostrarCompresion() {
-        return compresionArchivo.comprimirArchivo();
-
-    }
 
 }
