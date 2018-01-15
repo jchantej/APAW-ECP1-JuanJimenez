@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 import Patrones.Author;
 import Patrones.Book;
+import Patrones.Persona;
 
 public class BookBuilder {
 
@@ -52,4 +53,6 @@ public class BookBuilder {
     public Book build() {
         return this.book;
     }
+    
+
 }
